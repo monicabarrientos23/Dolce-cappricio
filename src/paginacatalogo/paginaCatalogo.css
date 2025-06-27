@@ -1,0 +1,133 @@
+.catalogo-container {
+  padding: 25px;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f8b6c2;
+  box-sizing: border-box;
+}
+
+
+.titulo-catalogo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: orangered;
+}
+
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.producto-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fffaf9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto-nombre {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #b93b5f;
+}
+
+.producto-precio {
+  font-size: 16px;
+  color: #e91e63;
+}
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  color: black;
+}
+
+.btn-contador {
+  background-color: #d14e72;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-contador:hover {
+  background-color: #b93b5f;
+}
+
+.cantidad {
+  font-size: 16px;
+  font-weight: bold;
+  width: 24px;
+  text-align: center;
+}
+.btn-agregar {
+  margin-top: 10px;
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn-agregar:hover {
+  background-color: #fb8c00;
+}
+
+.canasta-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.canasta-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.contador-canasta {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
