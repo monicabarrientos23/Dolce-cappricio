@@ -1,0 +1,72 @@
+.pagina-login {
+  display: flex;
+  height: 100vh;
+  
+}
+
+.login-container {
+  flex: 0 0 35%;
+  background: rgba(255, 192, 203, 0.3); /* rosado muy suave */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+   align-items: center;
+}
+
+.imagen-container {
+  flex: 0 0 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; /* extra por si acaso */
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #e48db5;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.login-form button {
+  background: #e48db5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #d66fa3;
+}
+
+.login-form input:focus {
+  border-color: #d66fa3;
+  box-shadow: 0 0 5px rgba(214, 111, 163, 0.5);
+}
+
+.titulo-inicio {
+  color: #d66fa3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+

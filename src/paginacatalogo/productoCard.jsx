@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './paginaCatalogo.css';
 
-const ProductoCard = ({ nombre, precio, imagen, onAgregar }) => {
+const ProductoCard = ({ id, nombre, precio, imagen, onAgregar }) => {
   const [cantidad, setCantidad] = useState(0);
 
   const aumentar = () => setCantidad(cantidad + 1);
@@ -11,8 +11,8 @@ const ProductoCard = ({ nombre, precio, imagen, onAgregar }) => {
 
   const agregarACanasta = () => {
     if (cantidad > 0) {
-      onAgregar({ nombre, precio, cantidad });
-      setCantidad(0); // Reiniciar contador
+      onAgregar({ id, nombre, precio, cantidad, imagen });
+      setCantidad(0); // Reiniciar el contador
     }
   };
 
@@ -36,5 +36,6 @@ const ProductoCard = ({ nombre, precio, imagen, onAgregar }) => {
 };
 
 export default ProductoCard;
+
 
 

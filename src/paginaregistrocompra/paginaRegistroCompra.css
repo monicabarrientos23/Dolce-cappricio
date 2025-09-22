@@ -1,0 +1,73 @@
+.registro-compra {
+  margin-left: 250px;
+  padding: 40px;
+  background: #fdf1f6; /* rosa pálido */
+  min-height: 100vh;
+}
+
+.registro-compra h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #8b3f65;
+}
+
+.form-registro {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e4b8ca;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  background: white;
+}
+
+.form-row input:hover,
+.form-row select:hover {
+  border-color: #d17399;
+  box-shadow: 0 0 8px rgba(209, 115, 153, 0.5);
+}
+
+.radio-group {
+  justify-content: center;
+  gap: 40px;
+}
+
+.radio-group label {
+  font-size: 1rem;
+  color: #6e3451;
+}
+
+.btn-guardar {
+  align-self: center;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: #e48aad;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-guardar:hover {
+  background: #d17399;
+  box-shadow: 0 0 10px rgba(209, 115, 153, 0.6);
+}
+
+
+

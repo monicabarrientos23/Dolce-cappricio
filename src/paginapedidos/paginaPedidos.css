@@ -1,0 +1,49 @@
+.pagina-pedidos {
+  margin-left: 250px;
+  padding: 40px;
+  background: #fdf1f6;
+  min-height: 100vh;
+}
+
+.pagina-pedidos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #8b3f65;
+}
+
+.tabla-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-pedidos th,
+.tabla-pedidos td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e4b8ca;
+  text-align: left;
+}
+
+.tabla-pedidos th {
+  background: #e48aad;
+  color: white;
+}
+
+.tabla-pedidos tr:hover {
+  background: #f9dce5;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+}

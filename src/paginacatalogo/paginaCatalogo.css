@@ -1,4 +1,5 @@
 .catalogo-container {
+  margin-left: 250px; /* ⭐ deja espacio para el sidebar fijo */
   padding: 25px;
   text-align: center;
   justify-content: center;
@@ -37,14 +38,47 @@
   padding: 15px;
   background-color: #fffaf9;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* para animar hover */
+}
+.producto-card:hover {
+  transform: translateY(-5px);
+  border-color: #b93b5f;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Imagen con zoom */
 .producto-img {
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.4s ease;
 }
+.producto-card:hover .producto-img {
+  transform: scale(1.01);
+}
+
+/* Botón agregar con efecto presión */
+.btn-agregar {
+  margin-top: 10px;
+  background-color: #ffa726;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+.btn-agregar:hover {
+  background-color: #fb8c00;
+}
+.btn-agregar:active {
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+  transform: scale(0.98);
+}
+
 
 .producto-nombre {
   font-size: 18px;
@@ -131,3 +165,139 @@
   align-items: center;
   justify-content: center;
 }
+.barra-busqueda {
+  width: 50%;
+  max-width: 400px;
+  padding: 0.75rem;
+  margin: 20px auto 30px;
+  display: block;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sin-resultados {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #b93b5f;
+}
+.barra-busqueda {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+.barra-busqueda:focus {
+  box-shadow: 0 0 5px #e91e63;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: #fffaf9;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.canasta-lista {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.canasta-lista li {
+  margin-bottom: 0.5rem;
+  color: #b93b5f;
+}
+.filtro-precio {
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+  color: #5e3023;
+  font-family: 'Poppins', sans-serif;
+}
+
+.filtro-precio input[type="range"] {
+  width: 100%;
+}
+.panel-canasta {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: #fffaf9;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.panel-canasta h3 {
+    color: #d14e72;
+    margin-bottom: 10px;
+}
+
+.panel-canasta ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel-canasta li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.panel-canasta .total {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.btn-finalizar {
+    background-color: #ffa726;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cerrar {
+    margin-top: auto;
+    background: #ddd;
+    color: #333;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
