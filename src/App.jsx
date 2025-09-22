@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate, useNavigate } from "react-router-dom";
 import Sidebar from "./componentes/Sidebar";
 import PaginaLogin from "./paginalogin/paginaLogin";
-import PaginaInicio from "./paginainicio/paginaInicio";
+import PaginaInicio from "./paginaInicio/paginaInicio";
 import CatalogoProductos from "./paginacatalogo/paginaCatalogo";
 import PaginaRegistroCompra from "./paginaregistrocompra/paginaRegistroCompra";
 import PaginaPedidos from "./paginapedidos/paginaPedidos"; // ✅ AGREGADO
